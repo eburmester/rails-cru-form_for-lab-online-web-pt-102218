@@ -5,6 +5,9 @@ class GenresController < ApplicationController
   end 
   
   def create 
+    @genre = Genre.new(artist_params)
+    @artist.save 
+    redirect_to artist_path(params)
   end 
   
   def show 
