@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'genre/name:string'
+  
 
   resources :songs, only: [:index, :new, :show, :copy, :edit, :create, :update]
   resources :artists, only: [:index, :new, :show, :copy, :edit, :create, :update]
